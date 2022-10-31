@@ -58,4 +58,4 @@ Using Plotly Express and `hvplot` to create scatter plots, the distinct groups t
 5. A `hvplot` scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName when you hover over the data point: <br /> ![image](https://user-images.githubusercontent.com/108038989/198929415-fc494375-394d-42ab-a6af-f05ef2929762.png)
 
 ## Summary
-The purpose of this analysis was to utilize unsupervised learning to process and cluster data, reduce dimensions, and reduce principal components using PCA is order to present the analysis to clients preparing to get into the cryptocurrency market.
+The purpose of this analysis was to utilize unsupervised learning to process and cluster data, reduce dimensions, and reduce principal components using PCA is order to visualize and present the analysis to clients preparing to get into the cryptocurrency market.
