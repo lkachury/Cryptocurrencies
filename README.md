@@ -17,18 +17,17 @@ Martha is a senior manager for the Advisory Services Team at Accountability Acco
 Using Pandas, the dataset will be preprocess in order to perform PCA in Deliverable 2. The completed crypto_clustering Jupyter Notebook can be referenced [here]().
 
 1. The following five preprocessing steps have been performed on the crypto_df DataFrame:
-    - All cryptocurrencies that are not being traded are removed:
-    - The `IsTrading` column is dropped:
-    - All the rows that have at least one null value are removed:
-    - All the rows that do not have coins being mined are removed:
-    - The `CoinName` column is dropped:
+    - All cryptocurrencies that are not being traded are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919822-9abf2471-ae70-46ef-a03d-8a8a2b1f2925.png)
+    - The `IsTrading` column is dropped: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919914-be586ae8-cf4c-4cfd-8138-89ffcc4012c5.png) 
+    - All the rows that have at least one null value are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919972-0ed12396-d1a2-4cbf-8020-8d005169dd8e.png)
+    - All the rows that do not have coins being mined are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920020-b2f782ed-3641-4cf1-9024-4b6536b7af3b.png)
+    - The `CoinName` column is dropped: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920096-ccae2ef3-c32e-4169-aaf8-ce38350b72da.png)
     
-2. A new DataFrame is created that stores all cryptocurrency names from the `CoinName` column and retains the index from the `crypto_df` DataFrame:
+2. A new DataFrame is created that stores all cryptocurrency names from the `CoinName` column and retains the index from the `crypto_df` DataFrame: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920183-b1d28a81-aa2c-42bb-8fb8-5dde529b82ca.png)
 
-3. The `get_dummies()` method is used to create variables for the text features, which are then stored in a new DataFrame, `X`:
+3. The `get_dummies()` method is used to create variables for the text features, which are then stored in a new DataFrame, `X`: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920228-f49e7dac-1952-4ebb-8dfe-ca12adf7e16d.png)
 
-4. The features from the `X` DataFrame have been standardized using the StandardScaler `fit_transform()` function:
-
+4. The features from the `X` DataFrame have been standardized using the StandardScaler `fit_transform()` function: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920279-5a892b8b-2e39-4281-8839-ca1e811eb0f3.png)
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA
 Using the Principal Component Analysis (PCA) algorithm, the dimensions of the `X` DataFrame will be reduced to three principal components and these dimensions will be placed in a new DataFrame.
