@@ -16,7 +16,7 @@ Martha is a senior manager for the Advisory Services Team at Accountability Acco
 ### Deliverable 1: Preprocessing the Data for PCA 
 Using Pandas, the dataset will be preprocess in order to perform PCA in Deliverable 2. The completed crypto_clustering Jupyter Notebook can be referenced [here]().
 
-1. The following five preprocessing steps have been performed on the crypto_df DataFrame:
+1. The following five preprocessing steps have been performed on the `crypto_df` DataFrame:
     - All cryptocurrencies that are not being traded are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919822-9abf2471-ae70-46ef-a03d-8a8a2b1f2925.png)
     - The `IsTrading` column is dropped: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919914-be586ae8-cf4c-4cfd-8138-89ffcc4012c5.png) 
     - All the rows that have at least one null value are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919972-0ed12396-d1a2-4cbf-8020-8d005169dd8e.png)
