@@ -47,17 +47,15 @@ Using the K-means algorithm, an elbow curve will be created using `hvPlot` to fi
 ### Deliverable 4: Visualizing Cryptocurrencies Results
 Using Plotly Express and `hvplot` to create scatter plots, the distinct groups that correspond to the three principal components created in Deliverable 2 will be visualized, then a table with all the currently tradable cryptocurrencies will be created using the `hvplot.table()` function.
 
-1. The clusters are plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover:
+1. The clusters are plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover: <br /> ![image](https://user-images.githubusercontent.com/108038989/198927212-85f2590b-204f-4d2f-8bb6-e9df55765eed.png)
 
-2. A table with tradable cryptocurrencies is created using the `hvplot.table()` function:
+2. A table with tradable cryptocurrencies is created using the `hvplot.table()` function: <br /> ![image](https://user-images.githubusercontent.com/108038989/198927291-d28a6753-6fdb-408e-9c13-836a1732376e.png)
 
-3. The total number of tradable cryptocurrencies is printed:
+3. The total number of tradable cryptocurrencies is printed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198927660-d615fb18-fdda-4ff4-9ee5-d5201045d943.png)
 
-4. A DataFrame is created that contains the `clustered_df` DataFrame index, the scaled data, and the `CoinName` and `Class columns`:
+4. A DataFrame is created that contains the `clustered_df` DataFrame index, the scaled data, and the `CoinName` and `Class columns`: <br /> ![image](https://user-images.githubusercontent.com/108038989/198929065-4ff81f54-746d-4741-ae85-9d329bf597a1.png)
 
-5. A `hvplot` scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName when you hover over the data point:
-
-
+5. A `hvplot` scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName when you hover over the data point: <br /> ![image](https://user-images.githubusercontent.com/108038989/198929415-fc494375-394d-42ab-a6af-f05ef2929762.png)
 
 ## Summary
 The purpose of this analysis was to utilize unsupervised learning to process and cluster data, reduce dimensions, and reduce principal components using PCA is order to present the analysis to clients preparing to get into the cryptocurrency market.
