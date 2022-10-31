@@ -10,11 +10,11 @@ Martha is a senior manager for the Advisory Services Team at Accountability Acco
 - Jupyter Notebook
 
 ### Data Source 
--  [crypto_data]() csv file from [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist)
+-  [crypto_data](https://github.com/lkachury/Cryptocurrencies/blob/main/crypto_data.csv) csv file from [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist)
 
 ## Results
 ### Deliverable 1: Preprocessing the Data for PCA 
-Using Pandas, the dataset will be preprocess in order to perform PCA in Deliverable 2. The completed crypto_clustering Jupyter Notebook can be referenced [here]().
+Using Pandas, the dataset will be preprocess in order to perform PCA in Deliverable 2. The completed crypto_clustering Jupyter Notebook can be referenced [here](https://github.com/lkachury/Cryptocurrencies/blob/main/crypto_clustering.ipynb).
 
 1. The following five preprocessing steps have been performed on the `crypto_df` DataFrame:
     - All cryptocurrencies that are not being traded are removed: <br /> ![image](https://user-images.githubusercontent.com/108038989/198919822-9abf2471-ae70-46ef-a03d-8a8a2b1f2925.png)
@@ -30,14 +30,14 @@ Using Pandas, the dataset will be preprocess in order to perform PCA in Delivera
 4. The features from the `X` DataFrame have been standardized using the StandardScaler `fit_transform()` function: <br /> ![image](https://user-images.githubusercontent.com/108038989/198920279-5a892b8b-2e39-4281-8839-ca1e811eb0f3.png)
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA
-Using the Principal Component Analysis (PCA) algorithm, the dimensions of the `X` DataFrame will be reduced to three principal components and these dimensions will be placed in a new DataFrame.
+Using the Principal Component Analysis (PCA) algorithm, the dimensions of the `X` DataFrame will be reduced to three principal components and these dimensions will be placed in a new DataFrame. The completed crypto_clustering Jupyter Notebook can be referenced [here](https://github.com/lkachury/Cryptocurrencies/blob/main/crypto_clustering.ipynb).
 
 1. The PCA algorithm reduces the dimensions of the `X` DataFrame down to three principal components: <br /> ![image](https://user-images.githubusercontent.com/108038989/198921597-8a802f9e-f7f8-4c3e-b678-7ced2a5df22a.png)
 
 2. The `pcs_df` DataFrame is created and has the following three columns, `PC 1`, `PC 2`, and `PC 3`, and has the index from the `crypto_df` DataFrame: <br /> ![image](https://user-images.githubusercontent.com/108038989/198921640-9d30985f-33e0-4ea2-b567-a2b4da425a83.png)
 
 ### Deliverable 3: Clustering Cryptocurrencies Using K-means
-Using the K-means algorithm, an elbow curve will be created using `hvPlot` to find the best value for K from the `pcs_df` DataFrame created in Deliverable 2. Then, the K-means algorithm will be run to predict the K clusters for the cryptocurrencies’ data.
+Using the K-means algorithm, an elbow curve will be created using `hvPlot` to find the best value for K from the `pcs_df` DataFrame created in Deliverable 2. Then, the K-means algorithm will be run to predict the K clusters for the cryptocurrencies’ data. The completed crypto_clustering Jupyter Notebook can be referenced [here](https://github.com/lkachury/Cryptocurrencies/blob/main/crypto_clustering.ipynb).
 
 1. The K-means algorithm is used to cluster the cryptocurrencies using the PCA data, where the following steps have been completed:
     - An elbow curve is created using `hvPlot` to find the best value for K: <br /> ![image](https://user-images.githubusercontent.com/108038989/198923239-1a4db9f5-280e-4ed1-9a93-6fbdb67572e3.png)
@@ -45,7 +45,7 @@ Using the K-means algorithm, an elbow curve will be created using `hvPlot` to fi
     - A new DataFrame is created with the same index as the `crypto_df` DataFrame and has the following columns: `Algorithm`, `ProofType`, `TotalCoinsMined`, `TotalCoinSupply`, `PC 1`, `PC 2`, `PC 3`, `CoinName`, and `Class`: <br /> ![image](https://user-images.githubusercontent.com/108038989/198925830-6e676cd0-431f-4b8e-9dee-d62cb607abb2.png)
 
 ### Deliverable 4: Visualizing Cryptocurrencies Results
-Using Plotly Express and `hvplot` to create scatter plots, the distinct groups that correspond to the three principal components created in Deliverable 2 will be visualized, then a table with all the currently tradable cryptocurrencies will be created using the `hvplot.table()` function.
+Using Plotly Express and `hvplot` to create scatter plots, the distinct groups that correspond to the three principal components created in Deliverable 2 will be visualized, then a table with all the currently tradable cryptocurrencies will be created using the `hvplot.table()` function. The completed crypto_clustering Jupyter Notebook can be referenced [here](https://github.com/lkachury/Cryptocurrencies/blob/main/crypto_clustering.ipynb).
 
 1. The clusters are plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover: <br /> ![image](https://user-images.githubusercontent.com/108038989/198927212-85f2590b-204f-4d2f-8bb6-e9df55765eed.png)
 
