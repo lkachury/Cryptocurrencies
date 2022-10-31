@@ -32,10 +32,9 @@ Using Pandas, the dataset will be preprocess in order to perform PCA in Delivera
 ### Deliverable 2: Reducing Data Dimensions Using PCA
 Using the Principal Component Analysis (PCA) algorithm, the dimensions of the `X` DataFrame will be reduced to three principal components and these dimensions will be placed in a new DataFrame.
 
-1. The PCA algorithm reduces the dimensions of the `X` DataFrame down to three principal components:
+1. The PCA algorithm reduces the dimensions of the `X` DataFrame down to three principal components: <br /> ![image](https://user-images.githubusercontent.com/108038989/198921597-8a802f9e-f7f8-4c3e-b678-7ced2a5df22a.png)
 
-2. The `pcs_df` DataFrame is created and has the following three columns, `PC 1`, `PC 2`, and `PC 3`, and has the index from the `crypto_df` DataFrame:
-
+2. The `pcs_df` DataFrame is created and has the following three columns, `PC 1`, `PC 2`, and `PC 3`, and has the index from the `crypto_df` DataFrame: <br /> ![image](https://user-images.githubusercontent.com/108038989/198921640-9d30985f-33e0-4ea2-b567-a2b4da425a83.png)
 
 ### Deliverable 3: Clustering Cryptocurrencies Using K-means
 Using the K-means algorithm, an elbow curve will be created using `hvPlot` to find the best value for K from the `pcs_df` DataFrame created in Deliverable 2. Then, the K-means algorithm will be run to predict the K clusters for the cryptocurrencies’ data.
